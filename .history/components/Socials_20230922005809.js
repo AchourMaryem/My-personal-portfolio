@@ -1,0 +1,6 @@
+import Link from "next/"
+const Socials = () => {
+  return <div>Socials</div>;
+};
+
+export default Socials;
