@@ -31,14 +31,12 @@ const aboutData = [
           <SiNextdotjs key="nextjs" />,
           <SiFramer key="framer" />,
           <FaWordpress key="wordpress" />,
-        
+        ],
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [ <FaFigma key="figma" />,
-        <SiAdobexd key="adobexd" />,
-        <SiAdobephotoshop key="adobephotoshop" />,],
+        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
       },
     ],
   },
