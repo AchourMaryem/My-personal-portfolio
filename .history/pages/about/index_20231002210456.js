@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { FaHtml5, FaFigma,  FaWordpress,
-  FaCss3,FaCode, FaPhp, FaJs, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
+import { FaHtml5, FaFigma, FaCss3,FaCode, FaPhp, FaJs, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 import Link from "next/link";
 import { motion } from 'framer-motion';
 import { MdSchool, MdWork } from "react-icons/md";
@@ -8,8 +7,6 @@ import Image from "next/image";
 import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
 import { fadeIn } from '../../variants';
-
-
 
 import {
   SiNextdotjs,

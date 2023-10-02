@@ -8,7 +8,7 @@ import Image from "next/image";
 import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
 import { fadeIn } from '../../variants';
-
+import {
 
 
 import {

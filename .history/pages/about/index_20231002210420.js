@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { FaHtml5, FaFigma,  FaWordpress,
-  FaCss3,FaCode, FaPhp, FaJs, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
+import { FaHtml5, FaFigma, FaCss3,FaCode, FaPhp, FaJs, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 import Link from "next/link";
 import { motion } from 'framer-motion';
 import { MdSchool, MdWork } from "react-icons/md";
@@ -8,15 +7,274 @@ import Image from "next/image";
 import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
 import { fadeIn } from '../../variants';
-
-
-
 import {
   SiNextdotjs,
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
 } from "react-icons/si";
+
+
+//  data
+const aboutData = [
+  {
+    title: 'skills',
+    info: [
+      {
+        title: 'Web Development',
+        icons: [
+          <FaHtml5 key="html5" />,
+          <FaCss3 key="css3" />,
+          <FaJs key="js" />,
+          <FaReact key="react" />,
+          <SiNextdotjs key="nextjs" />,
+          <SiFramer key="framer" />,
+          <FaWordpress key="wordpress" />,
+        ],
+      },
+      {
+        title: 'UI/UX Design',
+        icons: [
+          <FaFigma key="figma" />,
+          <SiAdobexd key="adobexd" />,
+          <SiAdobephotoshop key="adobephotoshop" />,
+        ],
+      },
+    ],
+  },
+  {
+    title: 'awards',
+    info: [
+      {
+        title: 'Webby Awards - Honoree',
+        stage: '2011 - 2012',
+        key: 'webby-awards',
+      },
+      {
+        title: 'Adobe Design Achievement Awards - Finalist',
+        stage: '2009 - 2010',
+        key: 'adobe-design-awards',
+      },
+    ],
+  },
+  {
+    title: 'experience',
+    info: [
+      {
+        title: 'UX/UI Designer - XYZ Company',
+        stage: '2012 - 2023',
+        key: 'ux-designer',
+      },
+      {
+        title: 'Web Developer - ABC Agency',
+        stage: '2010 - 2012',
+        key: 'web-developer',
+      },
+      {
+        title: 'Intern - DEF Corporation',
+        stage: '2008 - 2010',
+        key: 'intern',
+      },
+    ],
+  },
+  {
+    title: 'credentials',
+    info: [
+      {
+        title: 'Web Development - ABC University, LA, CA',
+        stage: '2011',
+        key: 'web-development-education',
+      },
+      {
+        title: 'Computer Science Diploma - AV Technical Institute',
+        stage: '2009',
+        key: 'computer-science-diploma',
+      },
+      {
+        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
+        stage: '2006',
+        key: 'graphic-designer-certification',
+      },
+    ],
+  },
+];
+
+const About = () => {
+  return <div>About</div>;
+};
+
+export default About;
+J'ai ajouté des clés uniques à chaque élément du tableau JSX, comme key="html5", key="css3", etc. Assurez-vous de choisir des valeurs uniques pour les clés appropriées à chaque élément de la liste. Cela devrait résoudre les erreurs de compilation liées à la propriété "key" manquante.
+
+
+
+
+User
+24:18  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+35:14  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+Error: Command "npm run build" exited with 1                               import Image from "next/image";
+import ParticlesContainer from '../components/ParticlesContainer';
+import ProjectsBtn from '../components/ProjectsBtn';
+import Avatar from '../components/Avatar';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../variants';
+import Socials from '../components/Socials'; 
+
+
+const Home = () => {
+  return (
+    
+    <div className='bg-primary/60 h-full'>
+      {/* text */}
+      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10 " >
+        <div className="text-center flex flex-col justify-center xl:pt-50 xl:text-left h-full container mx-auto">
+          {/* titre */}
+          <motion.h1
+           variants={fadeIn('down', 0.2)}
+           initial='hidden'
+           animate='show'
+           exit='hidden'
+            className="h1">
+            Hi, I'am {''}
+            <br></br> <span className="text-accent">Achour Mariem</span>
+            <br></br>
+            FullStack Web Developer
+          </motion.h1>
+          <motion.p 
+          variants={fadeIn('down',0.3)}
+          initial='hidden'
+          animate='show'
+          exit='hidden'
+          className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-xl' >
+            I'am a final year software engineering student at Polytechnic School of Sousse, i am a motivated and ambitious person with a solid background in development. I am able to work independently or as a team and manage multiple tasks simultaneously while meeting the deadlines.
+          </motion.p>
+        </div>
+      </div>
+      {/* image */}
+      <div className="w-[1200px] h-full absolute right-0 bottom-0">
+       {/* bg-image */}
+        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right
+         xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
+
+       {/* particles */}
+           <ParticlesContainer />  
+
+       {/* avatar-image */}
+       <motion.div 
+          variants={fadeIn('up', 0.5)}
+          initial='hidden'
+          animate='show'
+          exit='hidden'
+          transition={{duration:1, ease:'easeInOut'}}
+          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[3%]">
+        <Avatar />
+       </motion.div>
+
+      </div>
+      <Socials />
+    </div>
+  );
+};
+
+export default Home;
+ corige moi le code
+ChatGPT
+Les erreurs que vous obtenez sont dues à des caractères non échappés (') dans votre code JSX, ce qui déclenche la règle react/no-unescaped-entities. Vous pouvez échapper ces caractères en utilisant des entités HTML appropriées. Voici le code corrigé :
+
+jsx
+Copy code
+import Image from "next/image";
+import ParticlesContainer from '../components/ParticlesContainer';
+import ProjectsBtn from '../components/ProjectsBtn';
+import Avatar from '../components/Avatar';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../variants';
+import Socials from '../components/Socials';
+
+const Home = () => {
+  return (
+    <div className='bg-primary/60 h-full'>
+      {/* text */}
+      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
+        <div className="text-center flex flex-col justify-center xl:pt-50 xl:text-left h-full container mx-auto">
+          {/* titre */}
+          <motion.h1
+            variants={fadeIn('down', 0.2)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className="h1"
+          >
+            Hi, I am{' '}
+            <br></br> <span className="text-accent">Achour Mariem</span>
+            <br></br>
+            FullStack Web Developer
+          </motion.h1>
+          <motion.p
+            variants={fadeIn('down', 0.3)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-xl'
+          >
+            I am a final year software engineering student at Polytechnic School of Sousse, I am a motivated and ambitious person with a solid background in development. I am able to work independently or as a team and manage multiple tasks simultaneously while meeting the deadlines.
+          </motion.p>
+        </div>
+      </div>
+      {/* image */}
+      <div className="w-[1200px] h-full absolute right-0 bottom-0">
+        {/* bg-image */}
+        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
+
+        {/* particles */}
+        <ParticlesContainer />
+
+        {/* avatar-image */}
+        <motion.div
+          variants={fadeIn('up', 0.5)}
+          initial='hidden'
+          animate='show'
+          exit='hidden'
+          transition={{ duration: 1, ease: 'easeInOut' }}
+          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[3%]"
+        >
+          <Avatar />
+        </motion.div>
+      </div>
+      <Socials />
+    </div>
+  );
+};
+
+export default Home;
+J'ai corrigé les caractères non échappés dans le texte, en remplaçant les apostrophes simples (') par des entités HTML appropriées. Cela devrait résoudre les erreurs liées à react/no-unescaped-entities.
+
+
+
+
+User
+a quelle ligne l'erreur 
+ChatGPT
+Les erreurs liées à la règle react/no-unescaped-entities ne sont pas spécifiques à une ligne particulière dans votre code, car elles se produisent dans plusieurs endroits où des apostrophes simples (') non échappées sont utilisées à l'intérieur de chaînes de texte. Ces erreurs sont dues à l'utilisation de ' directement dans le texte du JSX, ce qui n'est pas autorisé par la règle.
+
+Pour être plus précis, les erreurs peuvent se produire dans les lignes suivantes :
+
+Ligne 15 : <span className="text-accent">Achour Mariem</span>
+Ligne 19 : <br></br> FullStack Web Developer
+Ligne 34 : <span className="text-accent">Achour Mariem</span>
+Dans chaque cas, vous pouvez voir que les apostrophes simples non échappées (') sont utilisées dans le texte. Pour résoudre ces erreurs, vous devez échapper les apostrophes simples en utilisant des entités HTML appropriées, comme &apos; ou &lsquo;. Par exemple, vous pouvez les remplacer comme suit :
+
+Ligne 15 : <span className="text-accent">Achour Mariem</span>
+Ligne 19 : <br></br> FullStack Web Developer
+Ligne 34 : <span className="text-accent">Achour Mariem</span>
+Cela permettra de corriger les erreurs liées à la règle react/no-unescaped-entities.
+
+
+
+
+
+
 // Data
 const aboutData = [
   {
