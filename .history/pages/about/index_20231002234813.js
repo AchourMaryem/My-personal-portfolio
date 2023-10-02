@@ -55,7 +55,21 @@ const aboutData = [
         stage: "June 2023 - September 2023",
         logo: "https://res.cloudinary.com/dlchthnxq/image/upload/ar_1:1,b_rgb:ffffff,bo_5px_solid_rgb:ff0000,c_fill,g_auto,r_max,w_1000/v1695521247/envast_qpz2y4.webp",
         link: "https://envast.tn/en/#Welcome",
+      },{
+        title: "Web Development Internship",
+        company: "Envast Sousse, Tunisie",
+        tasks: [
+          "The ESS football team wanted to develop a cross-platform mobile app that allows its fans to check the team's latest news, updates, and match results while contributing small donations to the team through a custom-made ad-providing system.",
+          "Divided the tasks into sprints in JIRA.",
+          "Developed the endpoints and the admin dashboard for the ESS mobile app using Laravel.",
+          "Created a custom ad-providing service for the product.",
+          "Delivered the MVP version of the app on time to the client with all the needed functionalities, including OTA updates and push notifications.",
+        ],
+        stage: "June 2023 - September 2023",
+        logo: "https://res.cloudinary.com/dlchthnxq/image/upload/ar_1:1,b_rgb:ffffff,bo_5px_solid_rgb:ff0000,c_fill,g_auto,r_max,w_1000/v1695521247/envast_qpz2y4.webp",
+        link: "https://envast.tn/en/#Welcome",
       },
+      
       {
         title: "Web Development Internship",
         company: "MAKERLAB, Sousse, Tunisie",

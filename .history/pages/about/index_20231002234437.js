@@ -108,6 +108,7 @@ const aboutData = [
   },
 ];
 
+
 const About = () => {
   const [index, setIndex] = useState(0);
 
@@ -130,7 +131,7 @@ const About = () => {
             {/* Votre texte */}
           </p>
         </div>
-        <div className="flex flex-col w-full xl:max-w-[50%] h-[650px] pt-10 ">
+        <div className="flex flex-col w-full xl:max-w-[50%] h-[650px] pt-10 pb-6"> {/* Ajout de pb-6 (padding-bottom) ici */}
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 xl:mt-20">
             {aboutData.map((item, itemIndex) => (
               <div
@@ -151,7 +152,7 @@ const About = () => {
               </div>
             ))}
           </div>
-          <div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4" style={{ maxHeight: 'auto', overflowY: 'auto' }}>
+          <div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4" style={{ maxHeight: '650px', overflowY: 'auto' }}>
             {aboutData[index].info.map((item, itemIndex) => (
               <div key={itemIndex}>
                 <div className="py-2">
