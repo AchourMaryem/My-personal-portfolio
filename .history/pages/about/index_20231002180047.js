@@ -24,12 +24,18 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-         
+          <FaHtml5 />,
+          <FaCss3 />,
+          <FaJs />,
+          <FaReact />,
+          <SiNextdotjs />,
+          <SiFramer />,
+          <FaWordpress />,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [],
+        icons: ],
       },
     ],
   },
