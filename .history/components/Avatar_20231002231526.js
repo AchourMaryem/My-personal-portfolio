@@ -8,7 +8,7 @@ const Avatar = ({ width, height }) => {
     <div className='hidden xl:flex xl:max-w-none'>
       <Image
         src="https://res.cloudinary.com/dlchthnxq/image/upload/v1696281891/image_yuyjo0.png"
-        width={width || defaultWidth}
+        width={width || defaultWidth} // Utilisez la largeur par défaut si width n'est pas défini
         height={height}
         alt=""
         className='translate-z-0 w-full h-full'

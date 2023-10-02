@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaHtml5, FaFigma,  FaWordpress,
   FaCss3,FaCode, FaPhp, FaJs, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 import Link from "next/link";
 import { motion } from 'framer-motion';
 import { MdSchool, MdWork } from "react-icons/md";
 import Image from "next/image";
+import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
 import { fadeIn } from '../../variants';
 
@@ -110,9 +111,15 @@ const aboutData = [
 
 const About = () => {
   const [index, setIndex] = useState(0);
+ 
+
+  useEffect(() => {
+    if (counted) {
+    }
+  }, [counted]);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left ">
+    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
       <motion.div
         variants={fadeIn('right', 0.2)}
@@ -120,14 +127,14 @@ const About = () => {
         animate="show"
         exit="hidden"
         className='hidden xl:flex absolute bottom-0 -left-[370px]'>
+        <Avatar />
       </motion.div>
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         <div className='flex-1 flex flex-col justify-center'>
           <h2 className='h2'>
-            <span className="text-accent">ABOUT</span> ME
+          <span className="text-accent">ABOUT</span> ME
           </h2>
           <p className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
-            {/* Votre texte */}
           </p>
         </div>
         <div className="flex flex-col w-full xl:max-w-[50%] h-[650px] pt-10 ">
@@ -151,7 +158,7 @@ const About = () => {
               </div>
             ))}
           </div>
-          <div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4" style={{ maxHeight: '650px', overflowY: 'auto' }}>
+          <div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4 xl:overflow-y-auto xl:scrollbar-track-current">
             {aboutData[index].info.map((item, itemIndex) => (
               <div key={itemIndex}>
                 <div className="py-2">
@@ -246,6 +253,20 @@ const About = () => {
                             </div>
                           ))}
                         </div>
+                        <CountUp
+                          start={0}
+                          end={iconIndex + 1}
+                          duration={2}
+                          delay={0.5}
+                          onStart={startCount}
+                        >
+                          {({ countUpRef }) => (
+                            <div
+                              ref={countUpRef}
+                              className="opacity-0 group-hover:opacity-100 bg-black text-white text-xs text-center px-2 py-1 rounded absolute bottom-full left-1/2 transform -translate-x-1/2 transition-opacity duration-300 pointer-events-none"
+                            />
+                          )}
+                        </CountUp>
                       </div>
                     </div>
                   </div>

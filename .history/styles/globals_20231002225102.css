@@ -63,34 +63,4 @@
   }
   
 }
-@media (max-width: 600px) {
-  .element-a-masquer {
-    display: none;
-  }
-}
-/* styles/globals.css ou votre fichier CSS local */
-/* Barre de défilement personnalisée */
-.custom-scrollbar {
-  scrollbar-width: thin;
-  scrollbar-color: #7da0ca #0527595b;
-  width: 10px;
-  border-radius: 5px;
-}
 
-/* Track (fond de la barre de défilement) */
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: #0527595b;
-  border-radius: 5px;
-}
-
-/* Handle (poignée de la barre de défilement) */
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #7da0ca;
-  border-radius: 5px;
-}
-
-/* Poignée de la barre de défilement au survol */
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #5483b3;
-  border-radius: 5px;
-}

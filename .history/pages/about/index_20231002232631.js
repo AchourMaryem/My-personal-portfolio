@@ -124,10 +124,9 @@ const About = () => {
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         <div className='flex-1 flex flex-col justify-center'>
           <h2 className='h2'>
-            <span className="text-accent">ABOUT</span> ME
+          <span className="text-accent">ABOUT</span> ME
           </h2>
           <p className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
-            {/* Votre texte */}
           </p>
         </div>
         <div className="flex flex-col w-full xl:max-w-[50%] h-[650px] pt-10 ">
@@ -151,7 +150,7 @@ const About = () => {
               </div>
             ))}
           </div>
-          <div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4" style={{ maxHeight: '650px', overflowY: 'auto' }}>
+          <div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4 xl:overflow-y-auto xl:scrollbar-track-current">
             {aboutData[index].info.map((item, itemIndex) => (
               <div key={itemIndex}>
                 <div className="py-2">

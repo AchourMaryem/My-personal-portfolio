@@ -48,49 +48,37 @@
   .textarea {
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
-  .scrollable-content {
-    /* Modifier la couleur de la barre de défilement en gris */
-    scrollbar-width: thin;
-    scrollbar-color: gray gray; /* Couleur de la barre de défilement et du track (fond) */
-  }
-  
-  .scrollable-content::-webkit-scrollbar {
-    width: 6px; /* Largeur de la barre de défilement */
-  }
-  
-  .scrollable-content::-webkit-scrollbar-thumb {
-    background-color: gray; /* Couleur de la barre de défilement */
-  }
-  
 }
-@media (max-width: 600px) {
-  .element-a-masquer {
-    display: none;
-  }
+
+@font-face {
+  font-family: "BestermindRegular";
+  src: url("../assets/fonts/Bestermind/BestermindRegular.ttf") format("truetype");
+  /* Vous pouvez ajouter d'autres formats de police ici, comme woff ou woff2 si nécessaire */
 }
-/* styles/globals.css ou votre fichier CSS local */
-/* Barre de défilement personnalisée */
-.custom-scrollbar {
-  scrollbar-width: thin;
-  scrollbar-color: #7da0ca #0527595b;
+
+/* width */
+::-webkit-scrollbar {
   width: 10px;
   border-radius: 5px;
+
 }
 
-/* Track (fond de la barre de défilement) */
-.custom-scrollbar::-webkit-scrollbar-track {
+/* Track */
+::-webkit-scrollbar-track {
   background: #0527595b;
   border-radius: 5px;
+
 }
 
-/* Handle (poignée de la barre de défilement) */
-.custom-scrollbar::-webkit-scrollbar-thumb {
+/* Handle */
+::-webkit-scrollbar-thumb {
   background: #7da0ca;
   border-radius: 5px;
 }
 
-/* Poignée de la barre de défilement au survol */
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
   background: #5483b3;
   border-radius: 5px;
+
 }
