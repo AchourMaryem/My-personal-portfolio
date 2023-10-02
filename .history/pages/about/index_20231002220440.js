@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FaHtml5, FaFigma,  FaWordpress,
   FaCss3,FaCode, FaPhp, FaJs, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 import Link from "next/link";
@@ -119,6 +119,7 @@ const About = () => {
 
   useEffect(() => {
     if (counted) {
+      // Mise en place des valeurs finales pour le compteur ici
     }
   }, [counted]);
 
@@ -257,7 +258,6 @@ const About = () => {
                             </div>
                           ))}
                         </div>
-                       
                       </div>
                     </div>
                   </div>

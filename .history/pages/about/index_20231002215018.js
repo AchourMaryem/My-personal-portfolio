@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FaHtml5, FaFigma,  FaWordpress,
   FaCss3,FaCode, FaPhp, FaJs, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 import Link from "next/link";
@@ -8,7 +8,6 @@ import Image from "next/image";
 import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
 import { fadeIn } from '../../variants';
-import CountUp from "react-countup";
 
 
 
@@ -112,16 +111,6 @@ const aboutData = [
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  const [counted, setCounted] = useState(false);
-  const startCount = () => {
-    setCounted(true);
-  };
-
-  useEffect(() => {
-    if (counted) {
-    }
-  }, [counted]);
-
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
@@ -257,7 +246,6 @@ const About = () => {
                             </div>
                           ))}
                         </div>
-                       
                       </div>
                     </div>
                   </div>

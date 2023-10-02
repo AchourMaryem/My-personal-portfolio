@@ -257,7 +257,20 @@ const About = () => {
                             </div>
                           ))}
                         </div>
-                       
+                        <CountUp
+                          start={0}
+                          end={iconIndex + 1}
+                          duration={2}
+                          delay={0.5}
+                          onStart={startCount}
+                        >
+                          {({ countUpRef }) => (
+                            <div
+                              ref={countUpRef}
+                              className="opacity-0 group-hover:opacity-100 bg-black text-white text-xs text-center px-2 py-1 rounded absolute bottom-full left-1/2 transform -translate-x-1/2 transition-opacity duration-300 pointer-events-none"
+                            />
+                          )}
+                        </CountUp>
                       </div>
                     </div>
                   </div>
