@@ -108,12 +108,12 @@ const aboutData = [
     ],
   },
 ];
-
+// ...
 const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-screen bg-primary/30 py-32 text-center xl:text-left ">
       <Circles />
       <motion.div
         variants={fadeIn('right', 0.2)}
@@ -125,12 +125,13 @@ const About = () => {
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         <div className='flex-1 flex flex-col justify-center'>
           <h2 className='h2'>
-          <span className="text-accent">ABOUT</span> ME
+            <span className="text-accent">ABOUT</span> ME
           </h2>
           <p className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
+            {/* Votre texte */}
           </p>
         </div>
-        <div className="flex flex-col w-full xl:max-w-[50%] h-[650px] pt-10 ">
+        <div className="flex flex-col w-full xl:max-w-[50%] h-auto xl:h-[calc(100vh - 160px)] pt-10 pb-6 overflow-y-auto">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 xl:mt-20">
             {aboutData.map((item, itemIndex) => (
               <div
@@ -151,7 +152,7 @@ const About = () => {
               </div>
             ))}
           </div>
-<div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4" style={{ maxHeight: 'auto', overflowY: 'auto' }}>
+          <div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4">
             {aboutData[index].info.map((item, itemIndex) => (
               <div key={itemIndex}>
                 <div className="py-2">

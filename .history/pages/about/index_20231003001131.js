@@ -81,7 +81,7 @@ const aboutData = [
         stage: "February 2022 - May 2022",
         logo: "https://res.cloudinary.com/dlchthnxq/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1695522983/tmn_tbol4x.jpg",
         link: "https://www.instagram.com/tmn_media_/?hl=fr",
-      },
+      },<br></br>
     ],
     show: true,
   },

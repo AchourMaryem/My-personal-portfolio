@@ -151,7 +151,7 @@ const About = () => {
               </div>
             ))}
           </div>
-<div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4" style={{ maxHeight: 'auto', overflowY: 'auto' }}>
+          <div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4 xl:overflow-y-auto xl:scrollbar-track-current">
             {aboutData[index].info.map((item, itemIndex) => (
               <div key={itemIndex}>
                 <div className="py-2">

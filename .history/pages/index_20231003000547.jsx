@@ -23,7 +23,7 @@ const Home = () => {
     };
   }, []);
 
-  const avatarWidth = windowWidth > 768 ? 200 : 350; 
+  const avatarWidth = windowWidth > 768 ? 200 : 350; // Modifier la taille ici
 
   return (
     <div className="bg-primary/60 h-full">

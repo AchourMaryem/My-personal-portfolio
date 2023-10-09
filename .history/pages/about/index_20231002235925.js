@@ -5,7 +5,6 @@ import Link from "next/link";
 import { motion } from 'framer-motion';
 import { MdSchool, MdWork } from "react-icons/md";
 import Image from "next/image";
-import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
 import { fadeIn } from '../../variants';
 
@@ -113,7 +112,8 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    
+    <div className="h-full bg-primary/30 py-32 text-center xl:text-left  ">
       <Circles />
       <motion.div
         variants={fadeIn('right', 0.2)}
@@ -151,7 +151,7 @@ const About = () => {
               </div>
             ))}
           </div>
-<div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4" style={{ maxHeight: 'auto', overflowY: 'auto' }}>
+          <div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4 xl:overflow-y-auto xl:scrollbar-track-current">
             {aboutData[index].info.map((item, itemIndex) => (
               <div key={itemIndex}>
                 <div className="py-2">
