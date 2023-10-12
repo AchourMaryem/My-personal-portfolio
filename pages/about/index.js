@@ -92,18 +92,40 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 key="html5" />,
-          <FaCss3 key="css3" />,
-          <FaJs key="js" />,
-          <FaReact key="react" />,
-          <SiNextdotjs key="nextjs" />,
-          <SiFramer key="framer" />,
-          <FaWordpress key="wordpress" />,
+          {
+            icon:<FaHtml5 key="html5" />,
+            title:"HTML"
+          },
+          {
+            icon:<FaCss3 key="css3" />,
+            title:"CSS"
+          },
+          {
+            icon:<FaJs key="js" />,
+            title:"Javascript"
+          },
+          {
+            icon:<FaReact key="react" />,
+            title:"ReactJS"
+          },
+          {
+            icon:<SiNextdotjs key="nextjs" />,
+            title:"NextJS"
+          },
+          {
+            icon:<SiFramer key="framer" />,
+            title:"Framer Motion"
+          },    
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma key="figma" />],
+        icons: [
+          {
+            icon:<FaFigma key="figma" />,
+            title:"Figma"
+          },
+        ],
       },
     ],
   },
@@ -113,7 +135,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-full bg-primary/30 py-32 text-center xl:text-left  ">
       <Circles />
       <motion.div
         variants={fadeIn('right', 0.2)}
@@ -151,17 +173,17 @@ const About = () => {
               </div>
             ))}
           </div>
-<div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4" style={{ maxHeight: 'auto', overflowY: 'auto' }}>
+<div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4 scroll-auto h-screen overflow-y-auto ">
             {aboutData[index].info.map((item, itemIndex) => (
-              <div key={itemIndex}>
+              <div key={itemIndex} className='sm:last:mb-96 xl:last:mb-0 last:mb-96'>
                 <div className="py-2">
-                  <div className="text-start">
+                  <div className="text-start ">
                     {item?.company && (
                       <Link passHref legacyBehavior href={item?.link}>
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-accent font-bold"
+                          className=" font-semibold text-xl "
                         >
                           {item?.company}
                         </a>
@@ -173,13 +195,13 @@ const About = () => {
                           aria-label="School"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-accent font-bold"
+                          className="font-semibold text-lg"
                         >
                           {item?.school}
                         </a>
                       </Link>
                     )}
-                    <div className="flex gap-2 items-start">
+                    <div className="flex gap-4 items-start ">
                       {item.logo && (
                         <Image
                           priority
@@ -193,7 +215,7 @@ const About = () => {
                       <div className="flex flex-col max-w-max gap-x-4 items-start text-white/60 justify-center">
                         <div className="font-light mb-2 md:mb-0 flex flex-col text-start">
                           <div
-                            className={`text-white font-bold ${
+                            className={`text-white font-sans ${
                               item.tasks ? "my-4" : ""
                             }`}
                           >
@@ -212,7 +234,7 @@ const About = () => {
                           )}
                           <div className="flex gap-4">
                             {item.stage && (
-                              <div className="text-accent font-bold">
+                              <div className="">
                                 {item?.stage}
                               </div>
                             )}
@@ -238,9 +260,9 @@ const About = () => {
                           {item.icons?.map((icon, iconIndex) => (
                             <div key={iconIndex} className="relative group">
                               <div className="text-2xl text-white mb-1">
-                                {icon}
+                                {icon.icon}
                               </div>
-                              <div className="opacity-0 group-hover:opacity-100 bg-black text-white text-xs text-center px-2 py-1 rounded absolute bottom-full left-1/2 transform -translate-x-1/2 transition-opacity duration-300 pointer-events-none">
+                              <div className="opacity-0 ml-1 group-hover:opacity-100 bg-black text-white text-xs text-center px-2 py-1 rounded absolute bottom-full left-1/2 transform -translate-x-1/2 transition-opacity duration-300 pointer-events-none">
                                 {icon.title}
                               </div>
                             </div>

@@ -10,10 +10,10 @@ import WorkSlider from "../../components/WorkSlider";
 
 const Work = () => {
   return (
-     <div className="h-full bg-primary/30 py-36 flex items-center">
+     <div className="h-full bg-primary/30 py-36 flex items-center ">
   <ParticlesContainer />
 
-   	<div className="container mx-auto">
+   	<div className="container mx-auto ">
    		<div className="flex flex-col xl:flex-row gap-x-8">
    			<div className="text-center flex xl:w-[40vw] flex-col lg:text-left mb-4 xl:mb-0">
    				<motion.h2
@@ -38,7 +38,7 @@ const Work = () => {
    				initial="hidden"
    				animate="show"
    				exit="hidden"
-   				className="w-full xl:max-w-[65%]">
+   				className="w-full xl:max-w-[70%] flex items-center justify-center">
    				<WorkSlider />
    			</motion.div>
    		</div>

@@ -5,16 +5,8 @@ const workSlides = {
         { title: 'This Portfolio',
         path: '/portfolio.png',
         repo: "https://github.com/AchourMaryem/My-personal-portfolio",
-        description: (
-          <div>
-            <p>
-              Design and development of a Portfolio site, showing my expertise in web development
-            </p>
-            <p>
-              <strong>Technologies:</strong> Laravel
-            </p>
-          </div>
-        ),         
+        description: (<p className='font-normal text-white'>Design and development of a Portfolio site, showing my expertise in web development.<br/>Technologies: Laravel</p>)
+                   
         },
         {
           title: 'ESS APP',
@@ -83,7 +75,7 @@ const WorkSlider = () => {
    {workSlides.slides.map((slide, index) => {
 				return (
 					<SwiperSlide key={index}>
-						<div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
+						<div className="grid xs:grid-cols-1 xs:grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 gap-4 cursor-pointer pb-96 h-screen md:h-auto scroll-auto overflow-y-auto">
 						{slide.images.map((image, index) => {
               return (
                 <Link
@@ -108,7 +100,7 @@ const WorkSlider = () => {
                    <div className="text-white absolute top-2 left-2 bg-black bg-opacity-70 p-2 rounded-md">{image.title}</div>
 
                     <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#bd229e] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
-                    <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
+                    <div className="absolute hidden md:block group-hover:block bottom-12 md:bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
                       <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
                         <div className="delay-100">Consulter</div>
                         <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
@@ -118,10 +110,8 @@ const WorkSlider = () => {
                           <BsArrowRight />
                         </div>
                       </div>
-                      <div className="flex flex-row gap-4 mt-5 justify-center items-center">
-                        {image.icons}
-                      </div>
-                      <div className="text-white absolute top-5 left-5 image-description">{image.description}</div>
+                      
+                      <div className="text-white absolute w-[380px]  top-4 -left-28 ">{image.description}</div>
 
                     </div>
                   </div>
