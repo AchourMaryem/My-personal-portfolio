@@ -8,7 +8,7 @@ import { fadeIn } from '../variants';
 import Socials from '../components/Socials';
 
 const Home = () => {
-  const [windowWidth, setWindowWidth] = useState(0); 
+  const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
