@@ -8,14 +8,19 @@ import Image from "next/image";
 import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
 import { fadeIn } from '../../variants';
+import ParticlesContainer from '../../components/ParticlesContainer';
 
 
 
 import {
   SiNextdotjs,
+  SiNodedotjs,
   SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
+  SiExpress,
+  SiMongodb,
+  SiLaravel,
+  SiMysql
+
 } from "react-icons/si";
 // Data
 const aboutData = [
@@ -90,40 +95,44 @@ const aboutData = [
     titleIcon: <FaCode size={30} />,
     info: [
       {
-        title: 'Web Development',
+        title: 'Frameworks & Libraries',
         icons: [
-          {
-            icon:<FaHtml5 key="html5" />,
-            title:"HTML"
-          },
-          {
-            icon:<FaCss3 key="css3" />,
-            title:"CSS"
-          },
-          {
-            icon:<FaJs key="js" />,
-            title:"Javascript"
-          },
+         
           {
             icon:<FaReact key="react" />,
             title:"ReactJS"
           },
+         
+          {
+            icon:<SiNodedotjs key="nodejs" />,
+            title:"NodeJS"
+          },
+          {
+            icon:<SiExpress key="expressJs" />,
+            title:"ExpressJs"
+          },
+         
+          
           {
             icon:<SiNextdotjs key="nextjs" />,
             title:"NextJS"
           },
           {
-            icon:<SiFramer key="framer" />,
-            title:"Framer Motion"
-          },    
+            icon:<SiLaravel key="Laravel" />,
+            title:"Laravel"
+          },
         ],
       },
       {
-        title: 'UI/UX Design',
+        title: 'DBMS',
         icons: [
           {
-            icon:<FaFigma key="figma" />,
-            title:"Figma"
+            icon:<SiMongodb key="Mongodb" />,
+            title:"MongoDB"
+          },
+          {
+            icon:<SiMysql key="Mysql" />,
+            title:"Mysql"
           },
         ],
       },
@@ -136,7 +145,9 @@ const About = () => {
 
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left  ">
+     
       <Circles />
+      
       <motion.div
         variants={fadeIn('right', 0.2)}
         initial="hidden"
@@ -173,6 +184,7 @@ const About = () => {
               </div>
             ))}
           </div>
+
 <div className="py-6 flex flex-col gap-y-4 xl:gap-y-4 mx-4 scroll-auto h-screen overflow-y-auto ">
             {aboutData[index].info.map((item, itemIndex) => (
               <div key={itemIndex} className='sm:last:mb-96 xl:last:mb-0 last:mb-96'>
@@ -253,6 +265,7 @@ const About = () => {
                                   Certificat
                                 </a>
                               </Link>
+                              
                             )}
                           </div>
                         </div>
@@ -273,6 +286,7 @@ const About = () => {
                   </div>
                 </div>
               </div>
+              
             ))}
           </div>
         </div>

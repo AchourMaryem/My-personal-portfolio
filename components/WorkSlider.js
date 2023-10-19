@@ -12,18 +12,22 @@ const workSlides = {
           title: 'ESS APP',
           path: '/ESSAPP.png',
           repo: "/",
-          description: "Development of the mobile app for ESS football team ",
+          description: (<p className='font-normal text-white'>Development of the mobile app for ESS football team <br/>Technologies: Next JS & Tailwind CSS</p>)
+
         },
         {
           title: 'Yellow Pages',
           path: '/paj.png',
           repo: "https://github.com/AchourMaryem/Yellow-Pages-With-MERN-STACK",
-          description: "Web-based platform that allows users to search and find local businesses and services quickly and efficiently.",
+          description: (<p className='font-normal text-white'>Web-based platform that allows users to search and find local  services quickly and efficiently.<br/> Technologies: ReactJs, NodeJs, ExpressJS & MongoDB </p>)
+
         },
         {
           title: 'Tunisian Modern Newspaper',
           path: '/tunisian.png',
           repo: "https://www.figma.com/file/zpiX1L6gyLvaqRgXW4t9RA/Untitled?type=design&node-id=0-1&mode=design",
+          description: (<p className='font-normal text-white'>Participation to development of the front-end website to display news, blogs and podcasts <br/> Technologies: ReactJs </p>)
+
         },
       ],
     },

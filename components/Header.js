@@ -13,7 +13,7 @@ const Header = () => {
           {router.pathname === '/' ? (
             <Link href="/"></Link>
           ) : (
-         <Link href="/" className="text-3xl text-accent "  >Achour Mariem</Link>
+         <Link href="/" className="text-3xl text-accent "  ></Link>
           )}
             <Socials>Socials</Socials>
         </div>

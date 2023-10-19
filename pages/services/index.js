@@ -2,6 +2,7 @@
 import ServiceSlider from "../../components/ServiceSlider";
 import Bulb from "../../components/Bulb";
 import Circles from "../../components/Circles";
+import ParticlesContainer from '../../components/ParticlesContainer';
 
 //framer
 import { motion } from "framer-motion";
@@ -22,6 +23,7 @@ const Services = () => {
 							className="h2 xl:mt-8">
 							<span className="text-accent">My</span> Services
 						</motion.h2>
+						<ParticlesContainer />
 						<motion.p
 							variants={fadeIn("up", 0.4)}
 							initial="hidden"
