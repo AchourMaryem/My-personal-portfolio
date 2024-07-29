@@ -6,7 +6,7 @@ function DownlaodCv() {
 	const handleDownload = () => {
 		// Construct the full URL to the PDF file
 		const baseUrl = window.location.origin;
-		const pdfUrl = baseUrl + "/resume.pdf";
+		const pdfUrl = baseUrl + "/resume1.pdf";
 
 		// Create an anchor element to trigger the download
 		const anchor = document.createElement("a");
