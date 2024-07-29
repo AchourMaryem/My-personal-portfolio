@@ -13,12 +13,6 @@ const Socials = () => {
     <Link href={'https://github.com/AchourMaryem?tab=repositories'} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-all duration-300">
       <RiGithubLine />
     </Link>
-    <Link href={'https://www.instagram.com/maryem_achouur/'} className="hover:text-accent transition-all duration-300"target="_blank" rel="noopener noreferrer">
-      <RiInstagramLine />
-    </Link>
-    <Link href={'https://www.facebook.com/profile.php?id=100070889742279'} className="hover:text-accent transition-all duration-300" target="_blank" rel="noopener noreferrer"> 
-      <RiFacebookLine />
-    </Link>
   </div>
   );
 };
