@@ -27,7 +27,7 @@ function DownlaodCv() {
 			onClick={handleDownload}
 			aria-label="CV"
 			className="-ml-4 xl:ml-0 xl:-mt-2 relative group"
-			href="/resume.pdf"
+			href="/resume1.pdf"
 			// download="resume.pdf"
 			target="_blank"
 			rel="noopener noreferrer">
