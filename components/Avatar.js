@@ -7,7 +7,7 @@ const Avatar = ({ width, height }) => {
   return (
     <div className='hidden xl:flex xl:max-w-none'>
       <Image
-        src="https://res.cloudinary.com/dlchthnxq/image/upload/v1722248443/file_nphtvu.png"
+        src="mariem.png"
         width={width || defaultWidth}
         height={height}
         alt=""
