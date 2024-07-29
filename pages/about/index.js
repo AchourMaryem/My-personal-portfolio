@@ -52,6 +52,18 @@ const aboutData = [
         title: "Web Development Internship",
         company: "Envast Sousse, Tunisie",
         tasks: [
+          "Developed the endpoints for a cross-platform mobile app for online restaurant reservation and food pre-ordering",
+          "Integrated all the required functionalities like geolocation, maps and real-time communication and chat.",
+         " Developed the store-front website and the dashboard for the platform using Laravel. ",
+          ],
+        stage: "February 2024 - jun2024",
+        logo: "https://res.cloudinary.com/dlchthnxq/image/upload/ar_1:1,b_rgb:ffffff,bo_5px_solid_rgb:ff0000,c_fill,g_auto,r_max,w_1000/v1695521247/envast_qpz2y4.webp",
+        link: "https://envast.tn/en/#Welcome",
+      },
+      {
+        title: "Web Development Internship",
+        company: "Envast Sousse, Tunisie",
+        tasks: [
           "The ESS football team wanted to develop a cross-platform mobile app that allows its fans to check the team's latest news, updates, and match results while contributing small donations to the team through a custom-made ad-providing system.",
           "Divided the tasks into sprints in JIRA.",
           "Developed the endpoints and the admin dashboard for the ESS mobile app using Laravel.",
