@@ -2,17 +2,24 @@ const workSlides = {
   slides: [
     {
       images: [
+        {
+          title: 'BystroSync APP',
+          path: '/ESSAPP.png',
+          repo: "/",
+          description: (<p className='font-normal text-white'>Developed a cross-platform mobile app for online restaurant reservation and food pre-ordering. <br/>Technologies:Laravel</p>)
+
+        },
         { title: 'This Portfolio',
         path: '/portfolio.png',
         repo: "https://github.com/AchourMaryem/My-personal-portfolio",
-        description: (<p className='font-normal text-white'>Design and development of a Portfolio site, showing my expertise in web development.<br/>Technologies: Laravel</p>)
+        description: (<p className='font-normal text-white'>Design and development of a Portfolio site, showing my expertise in web development.<br/>Technologies: Next JS & Tailwind CSS </p>)
                    
         },
         {
           title: 'ESS APP',
           path: '/ESSAPP.png',
           repo: "/",
-          description: (<p className='font-normal text-white'>Development of the mobile app for ESS football team <br/>Technologies: Next JS & Tailwind CSS</p>)
+          description: (<p className='font-normal text-white'>Development of the mobile app for ESS football team <br/>Technologies:Laravel</p>)
 
         },
         {
@@ -22,6 +29,12 @@ const workSlides = {
           description: (<p className='font-normal text-white'>Web-based platform that allows users to search and find local  services quickly and efficiently.<br/> Technologies: ReactJs, NodeJs, ExpressJS & MongoDB </p>)
 
         },
+      
+       
+      ],
+    },
+   {
+       images: [
         {
           title: 'Tunisian Modern Newspaper',
           path: '/tunisian.png',
@@ -29,15 +42,6 @@ const workSlides = {
           description: (<p className='font-normal text-white'>Participation to development of the front-end website to display news, blogs and podcasts <br/> Technologies: ReactJs </p>)
 
         },
-      ],
-    },
- //   {
-    //   images: [
-    //     {
-    //       title: 'title',
-    //       path: '/thumb4.jpg',
-    //       repo: "",
-    //     },
     //     {
     //       title: 'title',
     //       path: '/thumb1.jpg',
@@ -53,8 +57,8 @@ const workSlides = {
     //       path: '/thumb3.jpg',
     //       repo: "",
     //     },
-    //   ],
-    // },
+      ],
+     },
   ],
 };
 import Image from 'next/image';
