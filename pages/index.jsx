@@ -51,7 +51,7 @@ const Home = () => {
               exit="hidden"
               className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-xl"
             >
-   With a love for creating digital experiences, I thrive on turning ideas into functional, user-friendly websites and mobile apps. I'm dedicated to continuous learning and enjoy the creative process of both front-end and back-end development.
+     I am a motivated and ambitious person with a solid background in development. I am able to work independently or as a team and manage multiple tasks simultaneously while meeting the deadlines.
             </motion.p>          )}
         </div>
       </div>
