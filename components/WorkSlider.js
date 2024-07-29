@@ -4,7 +4,7 @@ const workSlides = {
       images: [
         {
           title: 'BystroSync APP',
-          path: '/BystroSync.png',
+          path: '/LoginAdmin.png',
           repo: "/",
           description: (<p className='font-normal text-white'>Developed a cross-platform mobile app for online restaurant reservation and food pre-ordering. <br/>Technologies:Laravel</p>)
 
